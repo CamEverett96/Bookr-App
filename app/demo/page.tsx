@@ -1,6 +1,8 @@
 "use client"
 
 import { Hero } from "@/components/ui/hero"
+import Image from "next/image"
+import { Mockup } from "@/components/ui/mockup"
 
 export default function DemoPage() {
   return (
@@ -22,12 +24,19 @@ export default function DemoPage() {
         subtitle="Bookr brings your tasks, notes, and schedule together"
         ctaText="Get Started"
         ctaLink="/"
-        mockupImage={{
-          src: "https://images.unsplash.com/photo-1611224923853-80b023f02d71",
-          alt: "Bookr Calendar Interface",
-          width: 1274,
-          height: 1043
-        }}
+        customMockup={
+          <Mockup>
+            <div className="relative w-full aspect-[1274/1043] rounded-lg overflow-hidden">
+              <Image
+                src="https://images.unsplash.com/photo-1611224923853-80b023f02d71"
+                alt="Bookr Calendar Interface"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </Mockup>
+        }
       />
     </main>
   )
