@@ -74,7 +74,7 @@ function Footerdemo() {
         
         <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-border pt-6 text-center md:flex-row">
           <p className="text-sm text-muted-foreground">
-            © 2024 Bookr. All rights reserved.
+            © 2025 Bookr. All rights reserved.
           </p>
           <div className="flex items-center space-x-4">
             <a href="#" className="transition-colors hover:text-purple-600 text-muted-foreground">
